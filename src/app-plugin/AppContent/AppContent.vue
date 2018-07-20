@@ -10,7 +10,9 @@
     
     
 <script>
+import "./iscroll-probe.js"
 export default {
+    name:'app-content',
     methods:{
         //此处可以为IScroll添加方法
     },

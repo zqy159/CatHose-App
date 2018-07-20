@@ -16,18 +16,8 @@ Vue.prototype.$center=new Vue();
 
 /*封装公共组件作用全局(都是一些 基本方法如果需要特殊放法可以加上去)
 如果希望内置的属性不同可以单独设置一些方法的属性*/
-
-// IScroll组件
-import AppContent from '@/components/common/AppContent.vue'
-Vue.component('app-content', AppContent);
-
-//下拉刷新
-import AppUpbreak from '@/components/common/AppUpbreak.vue'
-Vue.component('app-break', AppUpbreak);
-
-//Swiper组件
-import AppSwiper from '@/components/common/AppSwiper.vue'
-Vue.component('app-swiper', AppSwiper);
+import plugin from "@/app-plugin"
+plugin(Vue)
 
 // 引用过滤器
 import './filter'
