@@ -14,15 +14,17 @@
     bottom:0;
     background: #fff;
 }
-.app-content{
+/* 具有上边框 */
+.content{
     width: 100%;
     position: absolute;
     top: 0.44rem;
     left: 0;
-    bottom: 0.49rem;
+    bottom:0;
     overflow: hidden;
     background: #efefef;
 }
+/* 具有下边框 */
 .pages{
     width: 100%;
     position: absolute;
@@ -31,6 +33,27 @@
     bottom: 0.49rem;
     overflow: hidden;
     background: #efefef;
+}
+/* 具有整个页面 */
+.app-content{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: #efefef;
+}
+/* 具有整个页面 层数较高 */
+.page{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: #efefef;
+    z-index:2;
 }
 #app{
     width:100%;

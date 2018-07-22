@@ -1,7 +1,11 @@
 <template>
-<app-content class="home pages">
-    <h1 ref='p'>This is an home page</h1>
-</app-content>
+<div class="app-content">
+    <app-content class="home pages">
+        <h1 ref='p'>This is an home page</h1>
+        
+    </app-content>
+    <router-view></router-view>
+</div>
 </template>
 
 <script>

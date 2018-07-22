@@ -1,10 +1,10 @@
 <template>
-    <div id="app">
-      <!-- App内容显示区域 -->
-      <router-view/>
-      <!-- 底部App导航 -->
-      <app-nav></app-nav>
-    </div>
+<div id="app">
+  <!-- App内容显示区域 -->
+  <router-view/>
+  <!-- 底部App导航 -->
+  <app-nav></app-nav>
+</div>
 </template>
 
 <script>

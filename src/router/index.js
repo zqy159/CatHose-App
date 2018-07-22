@@ -5,7 +5,6 @@ import Home from '@/views/Home.vue'
 import Collection from '@/views/Collection.vue'
 import Order from '@/views/Order.vue'
 import Mine from '@/views/Mine.vue'
-
 Vue.use(Router)
 
 export default new Router({
@@ -14,7 +13,13 @@ export default new Router({
       path: '/home',
       alias:'/',
       name: 'home',
-      component: Home
+      component: Home,
+      // children:[
+      //   {
+      //     path:,
+      //     component:
+      //   }
+      // ]
     },
     {
       path: '/collection',
