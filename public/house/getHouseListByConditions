@@ -1,0 +1,22 @@
+{
+	"comeDate":"2018-7-14",
+	"leaveDate":"2018-7-15",
+	"city":"深圳市",
+	"houses":[
+		{
+		"id":"1",
+		"picUrl":"http://127.0.0.1:8080/OnlineVote/",
+		"otherMsg":"xx",
+		"houseType":"XX",
+		"minPrice":"120",
+		"maxPrice":"240",
+		"title":"玉林城南现代简约靛蓝风",
+		"mark":"5.0",
+		"bedCount":"2",
+		"personCount":"3",
+		"topicCount":"17",
+		"county":"南山区",
+		"userPic":"http://127.0.0.1:8080/OnlineVote/"
+		}
+	]
+}

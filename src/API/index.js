@@ -2,13 +2,13 @@
 猫宿优选信息
     无参
 */
-const PREFERENCE_URL = '/houseController/getHouseListByOption';
+const PREFERENCE_URL = '/house/getHouseListByOption';
 
 /*
 房源位置接口
     nameMsg: 城市
 */
-const GRTCITY_URL = '/areaController/getCityName'
+const GRTCITY_URL = '/area/getCityName'
 
 /*
 筛选房源列表接口
@@ -20,7 +20,7 @@ const GRTCITY_URL = '/areaController/getCityName'
         必填currentPage: 当前页   
 */
 
-const HOUSECONTROLLER_URL="/houseController/getHouseListByConditions"
+const HOUSE_URL="/house/getHouseListByConditions"
 
 /*
 用户登录信息接口
@@ -29,7 +29,7 @@ const HOUSECONTROLLER_URL="/houseController/getHouseListByConditions"
          必填password: 用户密码
 */
 
-const USERLOGIN_URL="user/login"
+const USERLOGIN_URL="/user/login"
 
 /*
 用户注册信息接口
@@ -38,7 +38,7 @@ const USERLOGIN_URL="user/login"
          必填password: 用户密码
 */
 
-const USERREGISTER_URL="user/regist"
+const USERREGISTER_URL="/user/regist"
 
 /*
 用户注册信息接口
@@ -48,13 +48,13 @@ const USERREGISTER_URL="user/regist"
          必填newpwd：新密码
 */
 
-const USERREGISTER_URL="user/updatePwd"
+const USERUPDATE_URL="/user/updatePwd"
 
 
 export default {
     PREFERENCE_URL,
     GRTCITY_URL,
-    HOUSECONTROLLER_URL,
+    HOUSE_URL,
     USERLOGIN_URL,
     USERREGISTER_URL,
     USERREGISTER_URL

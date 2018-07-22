@@ -9,12 +9,20 @@
 </template>
 
 <script>
-import Vuex from 'vuex';
+import {getData} from "../Servies/home-servies.js"
 export default {
     data(){
         return {
 
         }
+    },
+    mounted(){
+        getData().then((val)=>{
+            console.log(val.data)
+        })
+        // getData().then((val)=>{
+        //     console.log(val)
+        // })
     }
 }
 </script>

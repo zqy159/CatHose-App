@@ -1,5 +1,5 @@
 import Axios from 'axios'
-import API from '@/Api' 
+import API from '@/API' 
 
 // 数据请求
 // export function getData(){
@@ -14,3 +14,17 @@ import API from '@/Api'
 //         })
 //     }) 
 // }
+
+export function getData(){
+    return new Promise((resolve,reject)=>{
+        Axios.get(API.HOUSE_URL,{
+            params: {
+                
+            }
+        }).then((res)=>{
+            // console.log(res)
+            //返回获取的数据
+            resolve(res)
+        })
+    }) 
+}
