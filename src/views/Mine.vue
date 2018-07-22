@@ -1,35 +1,37 @@
 <template>
-<app-content class="mine pages">
-    <div class="header">
-      <img src="img/head.jpg" alt="">
-      <div class="msg">
-        <p class="name">喵喵</p>
-        <p>编辑并查看个人信息</p>
-      </div>
-    </div>
-    <div class="main">
-      <ul class="list">
-        <li class="b-bottom">
-            <img src="img/order.png" alt="">
-            我的消息
-        </li>
-        <li class="b-bottom">
-            <img src="img/order.png" alt="">
-            我的钱包
-        </li>
-        <li class="b-bottom">
-            <img src="img/order.png" alt="">
-            发布的房源
-        </li>
-        <li>
-            <img src="img/order.png" alt="">
-            关于猫宿
-            <span style="float: right">猫宿v2.9</span>
-        </li>
-      </ul>
-    </div>
-    <h1>This is an Order page</h1>
-</app-content>
+<div class="app-content">
+    <app-content class="mine pages">
+        <div class="header">
+          <img src="img/head.jpg" alt="">
+          <div class="msg">
+            <p class="name">喵喵</p>
+            <p>编辑并查看个人信息</p>
+          </div>
+        </div>
+        <div class="main">
+          <ul class="list">
+            <li class="b-bottom">
+                <img src="img/order.png" alt="">
+                我的消息
+            </li>
+            <li class="b-bottom">
+                <img src="img/order.png" alt="">
+                我的钱包
+            </li>
+            <li class="b-bottom">
+                <img src="img/order.png" alt="">
+                发布的房源
+            </li>
+            <li>
+                <img src="img/order.png" alt="">
+                关于猫宿
+                <span style="float: right">猫宿v2.9</span>
+            </li>
+          </ul>
+        </div>
+        <h1>This is an Order page</h1>
+    </app-content>
+</div>
 </template>
 
 <script>
