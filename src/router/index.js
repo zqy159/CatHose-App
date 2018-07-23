@@ -5,6 +5,10 @@ import Home from '@/views/Home.vue'
 import Collection from '@/views/Collection.vue'
 import Order from '@/views/Order.vue'
 import Mine from '@/views/Mine.vue'
+import Register from '@/components/pages/Mine/register.vue'
+import Login from '@/components/pages/Mine/login.vue'
+import Forget from '@/components/pages/Mine/forget.vue'
+
 Vue.use(Router)
 
 export default new Router({
@@ -34,7 +38,25 @@ export default new Router({
     {
       path: '/mine',
       name: 'mine',
-      component: Mine
+      component: Mine,
+      children:[
+        {
+          path:'register',
+          name:'register',
+          component:Register
+        },
+        {
+          path:'login',
+          name:'login',
+          alias: 'login/:flag',
+          component:Login
+        },
+        {
+          path:'forget',
+          name:'forget',
+          component:Forget
+        }
+      ]
     }
   ]
 })
