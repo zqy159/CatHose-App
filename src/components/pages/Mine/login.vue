@@ -3,6 +3,7 @@
 	<div class="img">
 		<img src="img/pic02.jpg"/>
 	</div>
+	<p class="city">200多个城市的华人房东<br/><span>欢迎您的到来</span></p>
 	<nav class="nav">
 		<li class="nav-item" :class="{active: showFlag=='codelogin'}" @click="navAction('codelogin')">
 			<span>验证码登录</span>
@@ -38,9 +39,8 @@
 	<ul v-show="showFlag == 'passlogin'">
 		<li>
 			<div class="form">
-				<input type="number" placeholder="请输入手机号码" />
-				<input type="number" placeholder="短信验证码" />
-				<span class="code">获取验证码</span>
+				<input type="text" placeholder="请输入手机号码 / QQ / 邮箱" />
+				<input type="number" placeholder="请输入密码" />
 				<button class="btn">登录</button>
 				<p>
 					<span @click="goRegister()">注册账号</span>
@@ -78,6 +78,7 @@
 			goRegister(){
 				this.$router.push({name: 'register'});
 			},
+			//跳转到忘记密码页面
 			goForget(){
 				this.$router.push({name: 'forget'});
 			}
@@ -91,6 +92,17 @@
 	width: 100%;
 	opacity: 0.65;
 	background: #212020;
+}
+.city{
+	position: absolute;
+	left: 32%;
+	top: 1.24rem;
+	text-align: center;
+	color: #fff;
+}
+.city span{
+	font-size: .16rem;
+	font-weight: bold;
 }
 .login .nav{
 	position: absolute;
@@ -107,7 +119,10 @@
 	text-align: center;
 	line-height: .44rem;
 	font-size: .15rem;
-	color: #fff;
+	
+}
+.login .nav .nav-item.active{
+	color: white;
 }
 ul li .form {
 	position: relative;

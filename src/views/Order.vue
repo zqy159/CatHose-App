@@ -1,7 +1,7 @@
 <template>
 <div class="app-content">
 	<app-content class="Order pages">
-	<h1>This is an Order page</h1>
+	<h1 class="title" @click="goOrder()">订单页面</h1>
 	</app-content>
 	<!--装载子页面-->
    <router-view></router-view>
@@ -10,7 +10,12 @@
 
 <script>
   export default{
-
+  	//订单页面进入订单详情页面
+	methods:{
+		goOrder(){
+			this.$router.push({name: 'orderList'});
+		}
+	}
   }
 </script>
 

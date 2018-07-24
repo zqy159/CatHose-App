@@ -4,6 +4,9 @@ import Router from 'vue-router'
 import Home from '@/views/Home.vue'
 import Collection from '@/views/Collection.vue'
 import Order from '@/views/Order.vue'
+import OrderList from '@/components/pages/Order/orderList.vue'
+
+
 import Mine from '@/views/Mine.vue'
 import Register from '@/components/pages/Mine/register.vue'
 import Login from '@/components/pages/Mine/login.vue'
@@ -33,7 +36,14 @@ export default new Router({
     {
       path: '/order',
       name: 'order',
-      component: Order
+      component: Order,
+      children:[
+      	{
+      		path:'orderList',
+      		name:'orderList',
+      		component:OrderList
+      	}
+      ]
     },
     {
       path: '/mine',

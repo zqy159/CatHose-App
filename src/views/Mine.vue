@@ -2,32 +2,31 @@
 <div class="app-content">
   <div class="mine pages">
       <div class="header">
-        <img src="img/head.jpg" alt="">
+        <img src="img/peo.jpg" alt="">
         <div class="msg">
           <p class="name">
           	<span @click="goRegister()">注册</span>
           	<span>/</span>
           	<span @click="goLogin()">登录</span>
           </p>
-          <p>编辑并查看个人信息</p>
         </div>
       </div>
       <div class="main">
         <ul class="list">
           <li class="b-bottom">
-              <img src="img/order.png" alt="">
+              <img src="img/pic01.jpg" alt="">
               我的消息
           </li>
           <li class="b-bottom">
-              <img src="img/order.png" alt="">
+              <img src="img/pic03.jpg" alt="">
               我的钱包
           </li>
           <li class="b-bottom">
-              <img src="img/order.png" alt="">
+              <img src="img/pic04.jpg" alt="">
               发布的房源
           </li>
           <li>
-              <img src="img/order.png" alt="">
+              <img src="img/pic05.jpg" alt="">
               关于猫宿
               <span style="float: right">猫宿v2.9</span>
           </li>
@@ -88,6 +87,7 @@
   font-size: 0.12rem;
 }
 .name{
+	padding-top: .1rem;
   font-size: 0.14rem;
 }
 .name span:nth-child(2){
@@ -100,10 +100,17 @@
   height: 0.45rem;
   margin:0 0.14rem;
   line-height: 0.45rem;
+  color: #333333;
+  font-size: .14rem;
+}
+.list li span{
+	font-size: .12rem;
+	color: #ccc;
 }
 .list img{
   vertical-align: middle;
   margin-right:0.1rem;
+  width:.18rem;
 }
 .b-bottom{
   border-bottom: 1px solid #e6e6e6;
