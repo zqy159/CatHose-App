@@ -16,7 +16,7 @@
             <img src="img/orders.png" alt="">
             订单
         </router-link>
-        <router-link to="/mine">
+        <router-link to="/mineLogin">
             <img src="img/mine.png" alt="">
             <img src="img/mines.png" alt="">
             我的

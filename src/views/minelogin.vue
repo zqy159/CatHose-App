@@ -2,23 +2,22 @@
 <div class="app-content">
   <div class="mine pages">
       <div class="header">
-      	<img src="../../public/img/mine1.jpg" class="set">
-        <img src="img/head.jpg" alt="">
+      	<img src="../../public/img/mine1.jpg" class="set" @click="goSet()">
+        <img src="img/headPic.jpg" alt="">
         <div class="msg">
           <p class="name">
-          	<span @click="goRegister()">注册</span>
-          	<span>/</span>
-          	<span @click="goLogin()">登录</span>
+          	<span>喵喵</span></br>
+          	<span>编辑并查看个人信息</span>
           </p>
         </div>
       </div>
       <div class="main">
         <ul class="list">
-          <li class="b-bottom">
+          <li class="b-bottom" @click="goMessage()">
               <img src="../../public/img/mine2.jpg" alt="">
               我的消息
           </li>
-          <li class="b-bottom">
+          <li class="b-bottom" @click="goWallet()">
               <img src="../../public/img/mine3.jpg" alt="">
               我的钱包
           </li>
@@ -29,11 +28,14 @@
           <li>
               <img src="../../public/img/mine5.jpg" alt="">
               关于猫宿
-              <span style="float: right">猫宿v2.9</span>
+              <span style="float: right;color:#cdcdcd;">猫宿v2.9</span>
           </li>
         </ul>
+        <div class="landlord"  @click="goLandlordPage()">
+      		我也要成为房东
+      	</div>
       </div>
-      <button class="btn">我也要成为房东</button>
+     
 
     </div>
 
@@ -50,17 +52,26 @@
 		}
 	},
 	methods:{
-		goRegister(){
-			console.log('点击了')
-			//跳转到注册页面
-			this.$router.push({name: 'register'});
+		goMessage(){
+			console.log("点击了")
+			//跳转到我的消息页面
+			this.$router.push({name:'message'});
 		},
-		goLogin(){
-			console.log('点击了')
-			//跳转到登录页面
-			this.$router.push({name: 'login'});
+		goSet(){
+			console.log("点击了")
+			//跳转到我的设置页面
+			this.$router.push({name:'set'});
 		},
-		
+		goWallet(){
+			console.log("点击了")
+			//跳转到我的钱包页面
+			this.$router.push({name:'wallet'});
+		},
+		goLandlordPage(){
+			console.log("点击了")
+			//跳转到我想成为房东页面
+			this.$router.push({name:'landlordPage'});
+		}
 	}
 	
   }
@@ -68,7 +79,7 @@
 <style scoped>
 .mine .header{
   width:100%;
-  height: 2.11rem;
+  height: 1.95rem;
   background: linear-gradient(right,#F9824D, #E5B144);
 }
 .header .set{
@@ -99,9 +110,14 @@
 }
 .name{
   font-size: 0.14rem;
+  color:#fdf4ea;
 }
-.name span:nth-child(2){
-	padding: 0 .05rem;
+.name span:nth-child(3){
+	color:#fdf4ea;
+	font-size: 0.12rem;
+}
+.main{
+	position: relative;
 }
 .list{
   background:#fff;
@@ -110,8 +126,8 @@
   height: 0.45rem;
   margin:0 0.14rem;
   line-height: 0.45rem;
-  color:#373737;
   font-size: 0.14rem;
+  color:#373737;
 }
 .list img{
   vertical-align: middle;
@@ -122,15 +138,21 @@
 .b-bottom{
   border-bottom: 1px solid #e6e6e6;
 }
-.btn{
+.landlord{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.14rem;
 	width: 3.45rem;
 	height: .5rem;
 	margin: 0 .15rem;
 	border: 0;
 	border-radius: 8px;
-	background: linear-gradient(right,#F9824D, #E5B144);
+	background: linear-gradient(to right,#e5af44,#fc7f4e);
 	color: #fff;
 	position: absolute;
+	bottom:0.3rem;
+	left:0.15rem;
 	left: 0;
 	bottom: -1.95rem;
 	outline: none;
