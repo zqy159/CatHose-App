@@ -7,7 +7,7 @@
         <div class="msg">
           <p class="name">
           	<span>喵喵</span></br>
-          	<span>编辑并查看个人信息</span>
+          	<span @click="goPerson()">编辑并查看个人信息</span>
           </p>
         </div>
       </div>
@@ -25,7 +25,7 @@
               <img src="../../public/img/mine4.jpg" alt="">
               发布的房源
           </li>
-          <li>
+          <li @click="goAbout()">
               <img src="../../public/img/mine5.jpg" alt="">
               关于猫宿
               <span style="float: right;color:#cdcdcd;">猫宿v2.9</span>
@@ -71,6 +71,16 @@
 			console.log("点击了")
 			//跳转到我想成为房东页面
 			this.$router.push({name:'landlordPage'});
+		},
+		goAbout(){
+			console.log("点击了")
+			//跳转到关于猫宿
+			this.$router.push({name:'about'});
+		},
+		goPerson(){
+			console.log("点击了")
+			//跳转到个人信息
+			this.$router.push({name:'person'});
 		}
 	}
 	

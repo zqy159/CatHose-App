@@ -10,13 +10,14 @@
 					清理缓存
 					<span>0.00M</span>
 				</li>
-				<li>
+				<li @click="goFeedback()">
 					意见反馈
 					<img src="../../../../public/img/right.jpg">
 				</li>
 				<div class="quit">退出登入</div>
 			</ul>
 		</main>
+		<router-view></router-view>
 	</div>
 </template>
 
@@ -27,6 +28,10 @@
 			withdraw(){
 				console.log("点击了")
 				this.$router.push({name:'mineLogin'});
+			},
+			goFeedback(){
+				console.log("点击了")
+				this.$router.push({name:'feedback'});
 			}
 		}
 	}

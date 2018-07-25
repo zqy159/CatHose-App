@@ -10,6 +10,7 @@
 				<span>¥  余额  0.00</span>
 			</div>
 		</main>
+		<router-view></router-view>
 	</div>
 </template>
 

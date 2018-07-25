@@ -12,8 +12,11 @@ import Forget from '@/components/pages/Mine/forget.vue'
 import Message from '@/components/pages/MineLogin/message.vue'
 import Wallet from '@/components/pages/MineLogin/wallet.vue'
 import Set from '@/components/pages/MineLogin/set.vue'
+import Feedback from '@/components/pages/MineLogin/Set/feedback.vue'
 import LandlordPage from '@/components/pages/MineLogin/landlordPage.vue'
 import BankCard from '@/components/pages/MineLogin/Wallet/bankcard.vue'
+import About from '@/components/pages/MineLogin/about.vue'
+import Person from '@/components/pages/MineLogin/person.vue'
 
 Vue.use(Router)
 
@@ -69,11 +72,19 @@ export default new Router({
     	name:'mineLogin',
     	component:MineLogin,
     	children:[
+    	//个人信息
+    		{
+        	path:'person',
+        	name:'person',
+        	component:Person
+        },
+    	//我的消息
     		{
         	path:'message',
         	name:'message',
         	component:Message
         },
+        //我的钱包
         {
         	path:'wallet',
         	name:'wallet',
@@ -86,11 +97,27 @@ export default new Router({
         		}
         	]
         },
+        //关于猫宿
+        {
+        	path:'about',
+        	name:'about',
+        	component:About
+        },
+        //我的设置
         {
         	path:'set',
         	name:'set',
-        	component:Set
+        	component:Set,
+        	children:[
+        	//意见反馈
+        		{
+        			path:'feedback',
+        			name:'feedback',
+        			component:Feedback
+        		}
+        	]
         },
+        //我想成为房东
         {
         	path:'landlordPage',
         	name:'landlordPage',

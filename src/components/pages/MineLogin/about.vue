@@ -1,12 +1,14 @@
 <template>
-	<div class="landlordPage page">
+	<div class="about page">
 		<header class="header">
 			<img src="../../../../public/img/left.jpg" @click="withdraw()">
-			<h1>我想成为房东</h1>
+			<h1>关于猫宿</h1>
 		</header>
 		<main class="main">
-			<img src="../../../../public/img/zi1 .jpg" />
-			<img src="../../../../public/img/zi2.jpg" />
+			<img src="../../../../public/img/cat.jpg">
+			<h2>猫宿</h2>
+			<p>猫宿之美,美于灵魂</p>
+			<span>最新版v2.9</span>
 		</main>
 	</div>
 </template>
@@ -24,7 +26,7 @@
 </script>
 
 <style scoped>
-	.landlordPage .header{
+	.header{
 		height:0.47rem;
 		width:100%;
 		background: linear-gradient(to right,#e5af44,#fc7f4e);
@@ -38,25 +40,34 @@
 	}
 	.header h1{
 		font-size: 0.16rem;
-		margin-left:1.11rem;
+		margin-left:1.27rem;
 		color:#fefdfc;
 	}
 	.main{
 		height:100%;
 		background: #FFFFFF;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 	.main img{
-		margin-top:0.2rem;
-		margin-left:0.15rem;
-		border:2px solid #f3f3f3;
-		border-radius: 2px;
+		margin-top:0.89rem;
+		width:1.28rem;
+		height:1.28rem;
 	}
-	.main img:nth-of-type(1){
-		width:3.45rem;
-		height:1.71rem;
+	.main h2{
+		margin-top:0.34rem;
+		font-size: 0.26rem;
+		color:#060606;
 	}
-	.main img:nth-of-type(2){
-		width:3.45rem;
-		height:1.52rem;
+	.main p{
+		margin-top:0.14rem;
+		font-size: 0.14rem;
+		color:#aeaeae;
+	}
+	.main span{
+		margin-top:2.48rem;
+		font-size: 0.12rem;
+		color:#adadad;
 	}
 </style>
