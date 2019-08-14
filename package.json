@@ -8,6 +8,11 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "html2canvas": "^1.0.0-rc.3",
+    "jquery": "^3.4.1",
+    "mint-ui": "^2.2.13",
+    "qrcanvas": "^3.0.4",
+    "qrcode": "^1.4.1",
     "vue": "^2.5.16",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"

@@ -7,6 +7,7 @@ import router from '@/router'
 //引用store定义全局状态(需要在统一地方修改)
 import store from '@/store'
 
+
 // 设置为 false 以阻止 vue 在启动时生成生产提示。
 Vue.config.productionTip = false
 
